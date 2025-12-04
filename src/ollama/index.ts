@@ -1,10 +1,13 @@
-import ollama from "ollama";
-import { LLM_MODEL } from "../config";
-
+import { LLM_MODEL, OLLAMA_API_KEY, OLLAMA_BASE_URL } from "../config";
+import { Ollama } from "ollama";
+const LLM = new Ollama({
+  host: OLLAMA_BASE_URL,
+  headers: { Authorization: "Bearer " + OLLAMA_API_KEY },
+});
 export class OllamaService {
   static async convertToJSON(userMessage: string): Promise<string> {
     try {
-      const message = [
+      const messages = [
         {
           role: "user",
           content: `
@@ -27,9 +30,9 @@ export class OllamaService {
         `,
         },
       ];
-      const response = await ollama.chat({
+      const response = await LLM.chat({
         model: LLM_MODEL,
-        messages: message,
+        messages,
       });
       return JSON.parse(response.message.content);
     } catch (error: any) {
