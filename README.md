@@ -96,20 +96,20 @@ yarn start
 
 ## 🔍 API Usage
 
-### GET /api/restaurants
+### GET /api/execute
 
 Params: - `message` (required) - `code=pioneerdevai`
 
 Example:
 
-    /api/restaurants?message=Find sushi in Manila&code=pioneerdevai
+    /api/execute?message=Find sushi in Manila&code=pioneerdevai
 
 ## 📦 Example Response
 
 ```json
 {
-  "success": true,
-  "results": [
+  "data": {
+        "results": [
     {
       "fsq_place_id": "String",
       "categories": "Array",
@@ -119,5 +119,7 @@ Example:
       "name": "String"
     }
   ]
+   },
+"message": "Restaurent Find!"
 }
 ```
