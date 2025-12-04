@@ -138,6 +138,7 @@ FSQUARE_URL=your_fsquare_api_url_here
 OLLAMA_API_KEY=your_ollama_api_key_here
 OLLAMA_BASE_URL=ollama_base_api_url_here
 
+```
 
 
 ## Assumptions and Limitations
