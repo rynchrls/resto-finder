@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/**": {
+    "src/**": {
       "runtime": "nodejs@18.20.8"
     }
   }
