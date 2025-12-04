@@ -154,4 +154,3 @@ OLLAMA_BASE_URL=ollama_base_api_url_here
 - Accuracy depends on the LLM’s interpretation; ambiguous or vague messages may produce unexpected results.
 - The API does not persist previous searches or cache results; every request triggers live API calls.
 - Error handling for external API failures is basic; detailed failures may not always be exposed to the user.
-```
