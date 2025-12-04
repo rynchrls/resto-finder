@@ -33,7 +33,7 @@ export class OllamaService {
       });
       return JSON.parse(response.message.content);
     } catch (error: any) {
-      throw new Error(`Ollama API error: ${error.message}`);
+      throw new Error(`Ollama API error: ${error}`);
     }
   }
 }
