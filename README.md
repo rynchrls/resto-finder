@@ -1,7 +1,7 @@
 # Restaurant Finder API
 
 LLM-Powered Foursquare Restaurant Search\
-**Coding Challenge -- November 2025**
+**Coding Challenge**
 
 ## 📌 Project Description
 
