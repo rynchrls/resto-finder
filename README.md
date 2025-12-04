@@ -123,3 +123,34 @@ Example:
   "message": "Restaurent Find!"
 }
 ```
+
+## Environment Variables
+
+This project requires some environment variables to run. Create a `.env.dev` file in the project root:
+
+```env
+PORT=5000
+CODE=pioneerdevai
+NODE_ENV=dev
+FSQUARE_API_KEY=your_api_key_here
+LLM_MODEL=your_ollama_model_here(I suggest use 'gpt-oss:120b-cloud')
+FSQUARE_URL=your_fsquare_api_url_here
+OLLAMA_API_KEY=your_ollama_api_key_here
+OLLAMA_BASE_URL=ollama_base_api_url_here
+
+
+
+## Assumptions and Limitations
+
+### Assumptions
+- Users only provide a natural language message describing what they want (e.g., “Find open restaurants near me under $20”).
+- The LLM is responsible for interpreting the message and converting it into actionable API queries.
+- The API assumes the LLM and Foursquare services are available and responsive.
+- Default values are applied if optional parameters (,`query`, `min_price`, `open_now`, `near`) are not inferred from the user message.
+
+### Limitations
+- The API does not handle authentication or user management.
+- Accuracy depends on the LLM’s interpretation; ambiguous or vague messages may produce unexpected results.
+- The API does not persist previous searches or cache results; every request triggers live API calls.
+- Error handling for external API failures is basic; detailed failures may not always be exposed to the user.
+```
