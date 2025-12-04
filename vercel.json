@@ -1,7 +1,7 @@
 {
-  "functions": {
-    "src/**": {
-      "runtime": "nodejs@18.20.8"
+    "functions": {
+        "src/index.js": {
+            "runtime": "nodejs@18.20.8"
+        }
     }
-  }
 }
