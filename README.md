@@ -109,17 +109,17 @@ Example:
 ```json
 {
   "data": {
-        "results": [
-    {
-      "fsq_place_id": "String",
-      "categories": "Array",
-      "distance": "Number",
-      "email": "String",
-      "location": "Object",
-      "name": "String"
-    }
-  ]
-   },
-"message": "Restaurent Find!"
+    "results": [
+      {
+        "fsq_place_id": "String",
+        "categories": "Array",
+        "distance": "Number",
+        "email": "String",
+        "location": "Object",
+        "name": "String"
+      }
+    ]
+  },
+  "message": "Restaurent Find!"
 }
 ```
