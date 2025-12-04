@@ -73,7 +73,7 @@ Requires: `?code=pioneerdevai`
 
 ```sh
 git clone <your-repo-url>
-cd restaurant-finder-api
+cd resto-finder
 ```
 
 ### 2. Install
