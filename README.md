@@ -11,11 +11,11 @@ The generated JSON is then used to query the **Foursquare Places API**
 and return accurate restaurant results.
 
 This project demonstrates: - Natural language → structured JSON
-conversion\
+conversion
 
-- Integration with Foursquare Places API\
-- Clean and scalable Node.js architecture\
-- TypeScript modular design\
+- Integration with Foursquare Places API
+- Clean and scalable Node.js architecture
+- TypeScript modular design
 - Secure API access using `?code=pioneerdevai`
 
 ## 🧱 Folder Structure
