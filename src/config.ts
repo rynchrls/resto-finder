@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 
-dotenv.config({ path: `.env.${process.env.NODE_ENV || "dev"}` });
+dotenv.config({ path: '.env' });
 
 export const PORT = (process.env.PORT || 5001) as number;
 export const CODE = process.env.CODE as string;
